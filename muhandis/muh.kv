@@ -1,0 +1,53 @@
+<MuhWindow>:
+  
+    MDScreen :
+        
+        MDCard :
+            orientation : 'vertical'
+            size_hint : None,None
+            size : 500,550
+            pos_hint : {"center_x":.5,"center_y":.5}
+            elevation : 15
+            md_bg_color : [.6,.7,.8,.5]
+            padding : 20
+            spacing : 20
+
+            MDLabel :
+                
+                text : "Muhandislik Qo`llanma"
+                font_style : "Button"
+                font_size : 30
+                
+                size_hint_y : 500
+                pos_hint : {"center_x":.6,"center_y":1}
+                height : self.texture_size[1]
+                padding_y : 10
+             
+                text_color: [0,1,0,1]
+            MDSeparator:
+                height: "3dp"
+                
+            GridLayout:
+                cols: 2
+
+            MDRoundFlatButton:
+                text: "Boshlang`ich tushunchalar"
+                font_size: 15
+                theme_text_color : "Custom"
+                text_color : [1,0,0,1]
+                md_bg_color : [0,0,0,1]
+
+
+            GridLayout:
+                Button:
+                    text: "Gidrotexnika"
+                    cols: 4
+                    rows: 4
+                    canvas.before:    
+                        Color:
+                            rgba: (0,0,0,1)
+                        Rectangle:
+                            pos: self.pos
+                            size: self.size
+                    
+                

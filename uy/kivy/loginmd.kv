@@ -1,0 +1,53 @@
+<LoginmdWindow>:
+    orientation: 'vertical'
+    GridLayout:
+        cols:2
+        padding: 30,60,60,15
+        spacing: 20
+        MDLabel:
+            text: "SIGN-UP"
+            halign: "right"
+            color: 0,1,0,1
+            font_size: 25
+            spacing: 90
+            size_hint_y: None
+            
+
+        MDTextField:
+            hint_text: "Ismingizni kiriting"
+            max_text_length: 5
+           
+            multiline: True
+            mode: "rectangle"
+        MDTextField:
+            hint_text: "Familiyangizni kiriting"
+            max_text_length: 5
+            multiline: True
+            mode: "rectangle"
+        MDTextField:
+            hint_text: "Otangizning ismi"
+            max_text_length: 5
+            multiline: True
+            mode: "rectangle"
+        MDTextField:
+            hint_text: "Parol kiriting"
+            helper_text: "8ta belgili bo`lsin"
+            helper_text_mode: "on_focus"
+            password: "true"
+            max_text_length: 5
+            multiline: True
+            mode: "rectangle"
+
+        MDTextFieldRound:
+            icon_left: 'key-variant'
+            icon_right: 'eye-off'
+            hint_text: 'Field with left and right icons'
+
+        MDRectangleFlatIconButton:
+            text: "Ro`yxatni tanlang"
+            icon: "java"
+            
+            theme_text_color: "Custom"
+            text_color: 0, 0, 1, 1
+            line_color: 1, 0, 1, 1
+            icon_color: 1, 0, 0, 1

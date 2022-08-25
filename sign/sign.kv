@@ -1,0 +1,104 @@
+<SignWindow>:
+  
+    MDScreen :
+        
+        MDCard :
+            orientation : 'vertical'
+            size_hint : None,None
+            size : 500,550
+            pos_hint : {"center_x":.5,"center_y":.5}
+            elevation : 15
+            md_bg_color : [.6,.7,.8,.5]
+            padding : 20
+            spacing : 20
+       
+            MDLabel :
+
+                text : "SIGN-UP"
+                font_style : "Button"
+                font_size : 40
+                halign : "center"
+                size_hint_y : None
+                height : self.texture_size[1]
+                padding_y : 30
+                text_color: [1,1,1,1]
+            MDSeparator:
+                height: "3dp"
+          
+            MDTextFieldRound :
+                hint_text : "username"
+                size_hint_x : None
+                icon_right : "account"
+                width : 270
+                font_size : 20
+                pos_hint : {"center_x":.5}
+                normal_color : [35/255,49/255,48/255,1]
+                color_active : [1,0,0,1]
+            MDTextFieldRound : 
+                hint_text : "user-id"
+                size_hint_x : None
+                icon_right : "account"
+                width : 270
+                font_size : 20
+                pos_hint : {"center_x":.5}
+                normal_color : [35/255,49/255,48/255,1]
+                color_active : [0,1,0,1]
+            MDTextFieldRound : 
+                hint_text : "password"
+                password : True
+                size_hint_x : None
+                icon_right : "eye-off"
+                width : 270
+                font_size : 20
+                pos_hint : {"center_x":.5}
+                normal_color : [35/255,49/255,48/255,1]
+                color_active : [0,0,1,1]
+            MDTextFieldRound : 
+                hint_text : "confirm-password"
+                size_hint_x : None
+                password : True
+                icon_right : "eye-off"
+                width : 270
+                font_size : 20
+                pos_hint : {"center_x":.5}
+                normal_color : [35/255,49/255,48/255,1]
+                color_active : [1,0,1,1]
+            MDTextFieldRound : 
+                hint_text : "mobile number"
+                size_hint_x : None
+                icon_right : "phone"
+                width : 270
+                font_size : 20
+                pos_hint : {"center_x":.5}
+                normal_color : [35/255,49/255,48/255,1]
+                color_active : [1,1,1,1]
+           
+           
+            GridLayout:
+                cols: 3
+                spacing: 24
+                padding: 80,25,25,50
+                MDRoundFlatButton :
+                    text : "back"
+                    font_size : 20
+                    pos_hint : {"right_x":.10}
+                    theme_text_color : "Custom"
+                    text_color : [1,0,0,1]
+                    md_bg_color : [0,0,0,1]
+               
+                MDRoundFlatButton :
+                    text : "SIGN-UP"
+                    font_size : 15
+                    pos_hint : {"center_x":.5}
+                    theme_text_color : "Custom"
+                    text_color : [0,1,0,1]
+                    md_bg_color : [0,0,0,1]
+                MDRoundFlatButton :
+                    text : "next"
+                    font_size : 15          
+                    pos_hint: {"center_y": 0.9}
+                    pos_hint: {"center_x": .67}          
+                    theme_text_color : "Custom"
+                    text_color : [0,1,0,1]
+                    md_bg_color : [0,0,0,1]
+           

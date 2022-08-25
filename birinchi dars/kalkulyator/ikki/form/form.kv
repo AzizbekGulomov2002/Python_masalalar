@@ -1,0 +1,97 @@
+<FormWindow>:
+  
+    TextInput:
+       
+        size_hint_x: 1
+        size_hint_y: 1
+        canvas.before:
+            Color:
+                rgba: (0,0,0,1)
+            Rectangle:
+                pos: self.pos
+                size: self.size
+           
+   
+    BoxLayout:
+        size_hint_y: 1.6
+        size_hint_x: 1.1
+        Label:
+            text: "LOGIN"
+            italic: True
+            font_size: 50
+            color: (0,1,0,1)
+            markup: True
+
+
+    Label:
+        text: ""
+        pos: 10,2
+        size_hint_x: 0.5
+        size_hint_y: 0.57
+        pos_hint:{"x":0.3,"y":0.18}
+        canvas.before:
+            Color:
+                rgba: (0,1,.5,1)
+            Rectangle:
+                pos: self.pos
+                size: self.size
+           
+
+                
+
+    Label:
+        text: "Loginni kiriting>>"
+        pos: 9,2
+        size_hint_x: 0.71
+        size_hint_y: 1.07
+        pos_hint:{"x":0.12,"y":0.12}
+        
+       
+       
+    TextInput:
+        text: "Username>>"
+        pos_hint:{"x":.4,"y":.58}
+        size_hint_y: 0.05
+        size_hint_x: .3
+
+    TextInput:
+        text: "Password>>"
+        pos_hint:{"x":.4,"y":.48}
+        size_hint_y: 0.05
+        size_hint_x: .3
+
+
+
+
+    Label:
+      
+        pos: 0,30
+        size_hint_x: .95
+        text: "Parolni kiriting>>"
+     
+      
+    Button:
+        text: "ok"
+        pos_hint:{"x":.4,"y":.3}
+        size_hint_y: .06
+        size_hint_x: .15
+    
+        canvas.before:    
+            Color:
+                rgba: (0,0,1,1)
+            Rectangle:
+                pos: self.pos
+                size: self.size
+           
+    Button:
+        text: "cancel"
+        pos_hint:{"x":.56,"y":.3}
+        size_hint_y: .06
+        size_hint_x: .14
+        canvas.before:    
+            Color:
+                rgba: (1,0,0,1)
+            Rectangle:
+                pos: self.pos
+                size: self.size
+               

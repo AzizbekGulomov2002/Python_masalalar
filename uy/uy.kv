@@ -1,0 +1,123 @@
+<UyWindow>:
+    Label:
+       
+        size_hint_x: 1
+        size_hint_y: 1
+        canvas.before:
+            Color:
+                rgba: (.6,.7,.9,.6)
+            Rectangle:
+                pos: self.pos
+                size: self.size
+           
+   
+    BoxLayout:
+        size_hint_y: 1.5
+        size_hint_x: 1.05
+        Label:
+            text: "---Welcome to Registration---"
+            italic: True
+            font_size: 40
+            color: (1,0,0,1)
+            markup: True
+
+
+    TextInput:
+        text: "First Name :"
+        pos_hint: {"x":0.3,"y": 0.6}
+        size_hint_x: 0.2
+        size_hint_y: 0.05
+    TextInput: 
+        text: "Last Name :"
+        pos_hint: {"x":0.52,"y":0.6}
+        size_hint_x: 0.22
+        size_hint_y: 0.05
+    TextInput:
+        text: "Mother Full Name :"
+        pos_hint: {"x": 0.3, "y": 0.53}
+        size_hint_y: 0.05
+        size_hint_x: 0.44
+    TextInput:
+        text: "Date of Birth :"
+        pos_hint: {"x": 0.3, "y": 0.46}
+        size_hint_x: 0.44
+        size_hint_y: 0.05
+   
+    TextInput: 
+        text: "Select Nationally :"
+        pos_hint: {"x": 0.3, "y": 0.32}
+        size_hint_x: 0.44
+        size_hint_y: 0.05
+    TextInput: 
+        text: "E-mail Aress :"
+        pos_hint: {"x": 0.3, "y": 0.25}
+        size_hint_x: 0.44
+        size_hint_y: 0.05
+
+    
+   
+    Button:
+        text: "Create Account" 
+        pos_hint: {"x": 0.3, "y": 0.18}
+        size_hint_x: 0.44
+        size_hint_y: 0.05
+        canvas.before:
+            Color:
+                rgba: (0,1,0,1)
+            Rectangle:
+                pos: self.pos
+                size: self.size    
+    GridLayout:
+        rows: 1
+        padding:200,90,340,90
+        spacing: 5
+        size_hint_x: 1.2
+        size_hint_y: 0.83
+        pos_hint: {"x":0, "y": 0}
+        CheckBox:
+            group: "Who"
+        Label:
+            text: "Men"
+        Label:
+            text: "Women"
+        CheckBox: 
+            group: "Who"
+
+
+    Button:
+        text: "Next>>" 
+        pos_hint: {"x": 0.53, "y": 0.11}
+        size_hint_x: 0.21
+        size_hint_y: 0.05
+        canvas.before:
+            Color:
+                rgba: (0,1,0,1)
+            Rectangle:
+                pos: self.pos
+                size: self.size       
+
+
+    Button:
+        text: "<<Back" 
+        pos_hint: {"x": 0.3, "y": 0.11}
+        size_hint_x: 0.20
+        size_hint_y: 0.05
+        canvas.before:
+            Color:
+                rgba: (1,0,0,1)
+            Rectangle:
+                pos: self.pos
+                size: self.size                   
+   
+
+    Button:
+        text: "Help " 
+        pos_hint: {"x": 0, "y": 0.947}
+        size_hint_x: 0.20
+        size_hint_y: 0.05
+        canvas.before:
+            Color:
+                rgba: (0,0,0,1)
+            Rectangle:
+                pos: self.pos
+                size: self.size  
